@@ -1,0 +1,163 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #dadce0;
+}
+@page {
+    size: 101mm 54mm;
+    margin: 0;
+}
+@media print {
+    .noPrint{
+        display:none;
+    }
+    .e_print {
+        padding: 5mm;
+        page-break-after: always;
+    }
+    button {
+        display: none;
+    }
+    .emptyRow {
+        margin: 0mm 0;
+    }
+}
+button {
+    margin: 5mm;
+}
+.e_web {
+    border-radius: 2.5mm;
+    padding: 5mm;
+    margin: 6mm;
+    width: 89mm;
+    height: 42mm;
+    background-color: white;
+
+}
+img {
+    border-radius: 3mm;
+    margin: 5mm;
+    width: 101mm;
+    height: 54mm;
+    background-color: white;
+
+}
+.projektnummer {
+    font-size: 7.2mm;
+    font-weight: bold;
+}
+.details {
+    font-size: 7.2mm;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 3mm 0;
+}
+.datum {
+    line-height: 7.2mm;
+    font-size: 3.5mm;
+    width: 40mm;
+    text-align: center;
+}
+.notes {
+    width: 100%;
+    font-size: 3.5mm;
+}
+.flex {
+    display: flex;
+}
+
+#Etiketten {
+    min-width: 420px;
+}
+.emptyRow {
+    flex: 1;
+    height: 3.5mm;
+    margin-bottom: 3mm;
+    border-bottom: solid 1px black;
+}
+#Tabelle {
+   margin-top: 36mm;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 7.2mm;
+    margin-bottom: 2mm;
+}
+.table_Wrapper {
+    min-width: 50rem; 
+    font-size: 4mm;
+    border-radius: 2.5mm;
+    padding: 5mm;
+    margin: 6mm;
+    background-color: white;
+}
+.zeile {
+    margin: 2px 0;
+    display: grid;
+    grid-template-columns: 7mm 120mm 32mm minmax(50mm,auto) 32mm 20mm;
+}
+.fertig {
+    background: #d3d3d3;
+}
+.current {
+    background: #00ff00;
+}
+.header {
+    margin: 2px 0;
+    font-weight: bold;
+    color: white;
+    background: #000000;
+}
+.spalte {
+    padding: 2px 5px;
+}
+.searchList {
+    width: 80%;
+    margin-left: 5mm;
+}
+
+.projektSuche {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 5mm;
+}
+
+.projektSuche > * {
+    margin-top: 5mm;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td {
+    border: 1px solid black;
+}
+.desc {
+    width: 20mm;
+    float: left;
+    font-size: 4mm;
+    line-height: 7.8mm;
+    padding: 0 2mm;
+}
+.row {
+    flex: 3;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 7mm;
+    line-height: 7.8mm;
+    padding: 0 2mm;
+    transform-origin: 90px;
+}
+.small {
+    font-size: 4mm;
+    font-weight: normal;
+}
+.document {
+    padding-top: 3px;
+    font-size: 28px;
+    line-height: 4mm;
+}
